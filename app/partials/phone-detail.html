@@ -1,5 +1,5 @@
 <div style="background-color:yellow">
-<a href="window.history.back()">Back</a>
+<a id="backBtn">Back</a>
 <img ng-src="{{mainImageUrl}}" class="phone">
 
 <h1>{{phone.name}}</h1>
@@ -114,3 +114,10 @@
   </li>
 </ul>
 <center>Copyright 2014</center>
+
+
+<script>
+	document.getElementById('backBtn').onclick = function(){
+		window.history.back();
+	};
+</script>
